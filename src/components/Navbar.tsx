@@ -11,7 +11,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container navbar-container">
         <a href="#" className='img-edit'>
-          <img src="./assets/img/edit-logo-novo.png" alt="Logo edit"/>
+          <img src="../assets/img/edit-logo-novo.png" alt="Logo edit"/>
         </a>
 
         {/* Desktop Menu */}

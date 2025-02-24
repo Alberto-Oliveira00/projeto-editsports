@@ -11,27 +11,27 @@ function App() {
   const products = [
     {
       title: 'Camisetas Personalizadas',
-      image: './assets/img/camiseta.jpg',
+      image: '../assets/img/camiseta.jpg',
       description: 'Camisetas esportivas com sua identidade visual'
     },
     {
       title: 'Fardamentos',
-      image: './assets/img/fardamento.jpg',
+      image: '../assets/img/fardamento.jpg',
       description: 'Uniformes completos para sua equipe'
     },
     {
       title: 'Femininos ',
-      image: './assets/img/fardamento.jpg',
+      image: '../assets/img/fardamento.jpg',
       description: 'Uniformes completos para sua equipe'
     },
     {
       title: 'Regatas',
-      image: './assets/img/fardamento.jpg',
+      image: '../assets/img/fardamento.jpg',
       description: 'Regatas para sua equipe'
     },
     {
       title: 'Kit Atleta',
-      image: './assets/img/aleatorio.jpg',
+      image: '../assets/img/aleatorio.jpg',
       description: 'Kit completo para atletas profissionais'
     },
     {
@@ -47,12 +47,12 @@ function App() {
     
     {
       title: 'Kit Inverno',
-      image: './assets/img/kit-inverno.jpg',
+      image: '../assets/img/kit-inverno.jpg',
       description: 'Roupas de inverno para sua equipe'
     },
     {
       title: 'Bandeiras',
-      image: './assets/img/kit-inverno.jpg',
+      image: '../assets/img/kit-inverno.jpg',
       description: 'Bandeiras para sua equipe'
     }
   ];
