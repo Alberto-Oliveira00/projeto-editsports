@@ -1,0 +1,236 @@
+import React from 'react';
+import { Phone, Mail, MapPin, Facebook, Instagram, MessageSquare } from 'lucide-react';
+import Navbar from './components/Navbar';
+import ProductCard from './components/ProductCard';
+import ClientCard from './components/ClientCard';
+import './styles/App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+
+function App() {
+  const products = [
+    {
+      title: 'Camisetas Personalizadas',
+      image: './assets/img/camiseta.jpg',
+      description: 'Camisetas esportivas com sua identidade visual'
+    },
+    {
+      title: 'Fardamentos',
+      image: './assets/img/fardamento.jpg',
+      description: 'Uniformes completos para sua equipe'
+    },
+    {
+      title: 'Femininos ',
+      image: './assets/img/fardamento.jpg',
+      description: 'Uniformes completos para sua equipe'
+    },
+    {
+      title: 'Regatas',
+      image: './assets/img/fardamento.jpg',
+      description: 'Regatas para sua equipe'
+    },
+    {
+      title: 'Kit Atleta',
+      image: './assets/img/aleatorio.jpg',
+      description: 'Kit completo para atletas profissionais'
+    },
+    {
+      title: 'Bolsas Esportivas',
+      image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&q=80&w=800',
+      description: 'Bolsas personalizadas para atletas'
+    },
+    {
+      title: 'Bonés Personalizados',
+      image: 'https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&q=80&w=800',
+      description: 'Bonés com design exclusivo'
+    },
+    
+    {
+      title: 'Kit Inverno',
+      image: './assets/img/kit-inverno.jpg',
+      description: 'Roupas de inverno para sua equipe'
+    },
+    {
+      title: 'Bandeiras',
+      image: './assets/img/kit-inverno.jpg',
+      description: 'Bandeiras para sua equipe'
+    }
+  ];
+
+  const clients = [
+    {
+      name: 'Clube Atlético Local',
+      image: 'https://images.unsplash.com/photo-1577471488278-16eec37ffcc2?auto=format&fit=crop&q=80&w=800',
+    },
+    {
+      name: 'Academia Força Total',
+      image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=800',
+    },
+    {
+      name: 'Escola de Futebol Craques',
+      image: 'https://images.unsplash.com/photo-1518604666860-9ed391f76460?auto=format&fit=crop&q=80&w=800',
+    }
+  ];
+
+  return (
+    <div>
+      <Navbar />
+      
+      {/* Hero Section */}
+      <section className="hero">
+        <img
+          src="./assets/img/aleatorio.jpg"
+          alt="Hero"
+          className="hero-image"
+        />
+        <div className="hero-overlay"></div>
+        <div className="container hero-content">
+          <div className="hero-text">
+            <h1 className="hero-title">Edit Sports</h1>
+            <p className="hero-description">Transformamos suas ideias em produtos esportivos de alta qualidade. Design personalizado para sua equipe brilhar dentro e fora de campo.</p>
+            <a
+              href="https://wa.me/5511947814551"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+            >
+              <FontAwesomeIcon icon= {faWhatsapp} className="icon"/>
+              Fale com um Vendedor
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className="section">
+        <div className="container">
+          <h2 className="section-title">Processo de Criação</h2>
+          <div className="grid grid-4">
+            <div className="process-item">
+              <div className="process-number">1</div>
+              <h3 className="process-title">Contato Inicial</h3>
+              <p className="process-description">Entre em contato com nossos vendedores para iniciar seu projeto</p>
+            </div>
+            <div className="process-item">
+              <div className="process-number">2</div>
+              <h3 className="process-title">Design</h3>
+              <p className="process-description">Compartilhe suas ideias e iremos transforma-lá em produtos de alta qualidade.</p>
+            </div>
+            <div className="process-item">
+              <div className="process-number">3</div>
+              <h3 className="process-title">Produção</h3>
+              <p className="process-description">Fabricação com materiais de alta qualidade e acabamento premium</p>
+            </div>
+            <div className="process-item">
+              <div className="process-number">4</div>
+              <h3 className="process-title">Finalize seu pedido</h3>
+              <p className="process-description">Faça o pagamento e receba seu produto em tempo recorde.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Products Section */}
+      <section id="produtos" className="section" style={{ backgroundColor: 'var(--bg-light)' }}>
+        <div className="container">
+          <h2 className="section-title">Nossos Produtos</h2>
+          <div className="grid grid-3">
+            {products.map((product, index) => (
+              <ProductCard key={index} {...product} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Clients Section */}
+      <section id="clientes" className="section">
+        <div className="container">
+          <h2 className="section-title">Principais Clientes</h2>
+          <div className="grid grid-3">
+            {clients.map((client, index) => (
+              <ClientCard key={index} {...client} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contato" className="section" style={{ backgroundColor: 'var(--bg-light)' }}>
+        <div className="container">
+          <h2 className="section-title">Entre em Contato</h2>
+          <div className="grid grid-2">
+            <div className="contact-card">
+              <h3 className="contact-title">Fale Conosco</h3>
+              <div className="contact-info">
+                <div className="contact-item">
+                  <Phone className="contact-icon" style={{ color: 'var(--primary-color)' }} />
+                  <span>(11) 94781-4551</span>
+                </div>
+                <div className="contact-item">
+                  <MessageSquare className="contact-icon" style={{ color: 'var(--success-color)' }} />
+                  <span>(11) 94781-4551</span>
+                </div>
+                <div className="contact-item">
+                  <Mail className="contact-icon" style={{ color: '#ef4444' }} />
+                  <span>editsports9315@gmail.com</span>
+                </div>
+                <div className="contact-item">
+                  <MapPin className="contact-icon" style={{ color: '#8b5cf6' }} />
+                  <span>Rua Example, 123 - Cidade, Estado</span>
+                </div>
+              </div>
+              <div className="social-links">
+                <a href="#" className="social-link" style={{ color: '#1d4ed8' }}>
+                  <Facebook />
+                </a>
+                <a href="https://www.instagram.com/editsportsoficial/" className="social-link" style={{ color: '#db2777' }}>
+                  <Instagram />
+                </a>
+                <a href="#" className="social-link" style={{ color: 'var(--success-color)' }}>
+                  <MessageSquare />
+                </a>
+              </div>
+            </div>
+            <div className="contact-card">
+              <h3 className="contact-title">Horário de Atendimento</h3>
+              <div className="hours-row">
+                <span className="font-medium">Segunda a Sexta</span>
+                <span>08:00 - 18:00</span>
+              </div>
+              <div className="hours-row">
+                <span className="font-medium">Sábado</span>
+                <span>08:00 - 13:00</span>
+              </div>
+              <div className="hours-note">
+                <p>Para melhor atendimento, agende uma visita com nossos vendedores através do WhatsApp.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="footer">
+        <div className="container">
+          <div className="footer-content">
+            <div className="footer-brand">
+              <h3 className="footer-title">Edit Sports</h3>
+              <p className="footer-subtitle">Qualidade e design para seu esporte</p>
+            </div>
+            <div className="footer-links">
+              <a href="#produtos" className="footer-link">Produtos</a>
+              <a href="#clientes" className="footer-link">Clientes</a>
+              <a href="#contato" className="footer-link">Contato</a>
+            </div>
+          </div>
+          <div className="footer-copyright">
+            © {new Date().getFullYear()} Edit Sports. Todos os direitos reservados.
+          </div>
+          <div className="dev">Site desenvolvido por <a href="https://portifolio-alberto.vercel.app/" target='blank'>Alberto Oliveira</a></div>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+export default App;
