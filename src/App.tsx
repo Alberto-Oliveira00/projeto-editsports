@@ -79,7 +79,7 @@ function App() {
       {/* Hero Section */}
       <section className="hero">
         <img
-          src="./assets/img/aleatorio.jpg"
+          src="../assets/img/aleatorio.jpg"
           alt="Hero"
           className="hero-image"
         />
