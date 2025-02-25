@@ -167,7 +167,7 @@ function App() {
                   <span>(11) 94781-4551</span>
                 </div>
                 <div className="contact-item">
-                  <MessageSquare className="contact-icon" style={{ color: 'var(--success-color)' }} />
+                  <FontAwesomeIcon icon= {faWhatsapp} className="contact-icon" style={{ color: 'var(--success-color)' }} />
                   <span>(11) 94781-4551</span>
                 </div>
                 <div className="contact-item">
@@ -176,7 +176,7 @@ function App() {
                 </div>
                 <div className="contact-item">
                   <MapPin className="contact-icon" style={{ color: '#8b5cf6' }} />
-                  <span>Rua Example, 123 - Cidade, Estado</span>
+                  <span>Manuel Quirino de Mattos, 87 - Sapopemba, São Paulo-SP</span>
                 </div>
               </div>
               <div className="social-links">
@@ -187,7 +187,7 @@ function App() {
                   <Instagram />
                 </a>
                 <a href="#" className="social-link" style={{ color: 'var(--success-color)' }}>
-                  <MessageSquare />
+                  <FontAwesomeIcon icon= {faWhatsapp} className='wpp-abaixo'/>
                 </a>
               </div>
             </div>
@@ -214,7 +214,8 @@ function App() {
         <div className="container">
           <div className="footer-content">
             <div className="footer-brand">
-              <h3 className="footer-title">Edit Sports</h3>
+              <img className='logo-footer' src="./assets/img/edit-logo.png" alt="" />
+              {/* <h3 className="footer-title">Edit Sports</h3> */}
               <p className="footer-subtitle">Qualidade e design para seu esporte</p>
             </div>
             <div className="footer-links">
