@@ -21,12 +21,12 @@ function App() {
     },
     {
       title: 'Femininos ',
-      image: '../assets/img/fardamento.jpg',
+      image: '../assets/img/feminina.jpg',
       description: 'Uniformes completos para sua equipe'
     },
     {
       title: 'Regatas',
-      image: '../assets/img/fardamento.jpg',
+      image: '../assets/img/regata.jpg',
       description: 'Regatas para sua equipe'
     },
     {
@@ -36,7 +36,7 @@ function App() {
     },
     {
       title: 'Bolsas Esportivas',
-      image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&q=80&w=800',
+      image: '../assets/img/bolsas.jpg',
       description: 'Bolsas personalizadas para atletas'
     },
     {
@@ -52,7 +52,7 @@ function App() {
     },
     {
       title: 'Bandeiras',
-      image: '../assets/img/kit-inverno.jpg',
+      image: '../assets/img/bandeira.jpg',
       description: 'Bandeiras para sua equipe'
     }
   ];
