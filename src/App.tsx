@@ -1,4 +1,4 @@
-import React from 'react';
+import { useLayoutEffect } from 'react';
 import { Phone, Mail, MapPin, Facebook, Instagram, MessageSquare } from 'lucide-react';
 import Navbar from './components/Navbar';
 import ProductCard from './components/ProductCard';
@@ -6,8 +6,17 @@ import ClientCard from './components/ClientCard';
 import './styles/App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
 
 function App() {
+  useLayoutEffect(() => {
+    gsap.to(".process-item", {
+      y: 0,
+      opacity: 1
+    })
+  }, [])
+
   const products = [
     {
       title: 'Camisetas Personalizadas',
@@ -214,7 +223,7 @@ function App() {
         <div className="container">
           <div className="footer-content">
             <div className="footer-brand">
-              <img className='logo-footer' src="./assets/img/edit-logo.png" alt="" />
+              <img className='logo-footer' src="./assets/img/edit-logo-lateral-branco.png" alt="" />
               {/* <h3 className="footer-title">Edit Sports</h3> */}
               <p className="footer-subtitle">Qualidade e design para seu esporte</p>
             </div>
@@ -227,7 +236,7 @@ function App() {
           <div className="footer-copyright">
             © {new Date().getFullYear()} Edit Sports. Todos os direitos reservados.
           </div>
-          <div className="dev">Site desenvolvido por <a href="https://portifolio-alberto.vercel.app/" target='blank'>Alberto Oliveira</a></div>
+          <div className="dev">Desenvolvido por <a href="https://portifolio-alberto.vercel.app/" target='blank'>Alberto Oliveira</a></div>
         </div>
       </footer>
     </div>

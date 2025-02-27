@@ -43,6 +43,8 @@
 /* Process Section */
 .process-item {
   text-align: center;
+  transform: translateY(1000px);
+  opacity: 0;
 }
 
 .process-number {
@@ -178,8 +180,8 @@
 }
 
 .logo-footer {
-  width: 7rem;
-  height: 5rem;
+  width: 8rem;
+  height: 1.5rem;
 }
 
 .footer-title {
@@ -220,6 +222,6 @@
 
 .dev a {
   text-decoration: none;
-  color: var(--success-color);
+  color: rgb(241, 77, 77);
 }
 
