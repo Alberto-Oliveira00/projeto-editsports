@@ -27,7 +27,7 @@ function App() {
         scrub: true
       }
     })
-
+    
   // Animação para Desktop
   mm.add("(min-width: 769px)", () => {
     gsap.to("#produtos", {
@@ -35,7 +35,7 @@ function App() {
       opacity: 1,
       scrollTrigger: {
         trigger: "#produtos",
-        markers: true, // Remova depois de testar
+        // markers: true,
         start: "top 740px",
         end: "bottom 1950px",
         scrub: true
@@ -50,7 +50,7 @@ function App() {
       opacity: 1,
       scrollTrigger: {
         trigger: "#produtos",
-        markers: true,
+        // markers: true,
         start: "top 85%",
         end: "bottom 550%",
         scrub: true

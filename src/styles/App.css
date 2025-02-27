@@ -162,7 +162,7 @@
 
 .process-item {
   text-align: center;
-  transform: translateY(150px);
+  transform: translateY(100px);
   opacity: 0;
 }
 }
