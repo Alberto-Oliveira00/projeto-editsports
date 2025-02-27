@@ -13,17 +13,50 @@ function App() {
   useLayoutEffect(() => {
 
     gsap.registerPlugin(ScrollTrigger);
+
+    let mm = gsap.matchMedia();
+
     gsap.to(".process-item", {
       y: 0,
       opacity: 1, 
       scrollTrigger: {
         trigger: ".container-criacao",
-        markers: true,
+        // markers: true,
         start: "top 500px",
-        end: "bottom 600px",
+        end: "bottom 640px",
         scrub: true
       }
     })
+
+  // Animação para Desktop
+  mm.add("(min-width: 769px)", () => {
+    gsap.to("#produtos", {
+      y: 0,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: "#produtos",
+        markers: true, // Remova depois de testar
+        start: "top 740px",
+        end: "bottom 1950px",
+        scrub: true
+      }
+    });
+  });
+
+  // Animação para Mobile
+  mm.add("(max-width: 768px)", () => {
+    gsap.to("#produtos", {
+      y: 0,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: "#produtos",
+        markers: true,
+        start: "top 85%",
+        end: "bottom 550%",
+        scrub: true
+      }
+    });
+  });
   }, [])
 
   const products = [
@@ -120,7 +153,7 @@ function App() {
       </section>
 
       {/* Process Section */}
-      <section className="section">
+      <section className="section container-criacao">
         <div className="container container-criacao">
           <h2 className="section-title">Processo de Criação</h2>
           <div className="grid grid-4">

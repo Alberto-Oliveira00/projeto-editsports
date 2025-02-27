@@ -43,7 +43,7 @@
 /* Process Section */
 .process-item {
   text-align: center;
-  transform: translateY(1000px);
+  transform: translateY(500px);
   opacity: 0;
 }
 
@@ -158,6 +158,12 @@
 .hero-description {
   font-size: .8rem;
   margin-bottom: 2rem;
+}
+
+.process-item {
+  text-align: center;
+  transform: translateY(150px);
+  opacity: 0;
 }
 }
 
