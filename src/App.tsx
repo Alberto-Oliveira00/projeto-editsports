@@ -11,9 +11,18 @@ import { ScrollTrigger } from 'gsap/all';
 
 function App() {
   useLayoutEffect(() => {
+
+    gsap.registerPlugin(ScrollTrigger);
     gsap.to(".process-item", {
       y: 0,
-      opacity: 1
+      opacity: 1, 
+      scrollTrigger: {
+        trigger: ".container-criacao",
+        markers: true,
+        start: "top 500px",
+        end: "bottom 600px",
+        scrub: true
+      }
     })
   }, [])
 
@@ -50,7 +59,7 @@ function App() {
     },
     {
       title: 'Bonés Personalizados',
-      image: 'https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&q=80&w=800',
+      image: '../assets/img/bones.jpg',
       description: 'Bonés com design exclusivo'
     },
     
@@ -112,7 +121,7 @@ function App() {
 
       {/* Process Section */}
       <section className="section">
-        <div className="container">
+        <div className="container container-criacao">
           <h2 className="section-title">Processo de Criação</h2>
           <div className="grid grid-4">
             <div className="process-item">
@@ -140,7 +149,7 @@ function App() {
       </section>
 
       {/* Products Section */}
-      <section id="produtos" className="section" style={{ backgroundColor: 'var(--bg-light)' }}>
+      <section id="produtos" className="section" >
         <div className="container">
           <h2 className="section-title">Nossos Produtos</h2>
           <div className="grid grid-3">
@@ -152,7 +161,7 @@ function App() {
       </section>
 
       {/* Clients Section */}
-      <section id="clientes" className="section">
+      <section id="clientes" className="section" /*style={{ backgroundColor: 'var(--bg-light)' }}*/>
         <div className="container">
           <h2 className="section-title">Principais Clientes</h2>
           <div className="grid grid-3">
@@ -164,7 +173,7 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section id="contato" className="section" style={{ backgroundColor: 'var(--bg-light)' }}>
+      <section id="contato" className="section" /*style={{ backgroundColor: 'var(--bg-light)' }}*/ >
         <div className="container">
           <h2 className="section-title">Entre em Contato</h2>
           <div className="grid grid-2">

@@ -17,6 +17,15 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100vh;
+  background-image: url('/assets/img/EDIT-FUNDO-CLARO.png');
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 body {
   font-family: "Inter", serif;
   line-height: 1.5;
