@@ -24,6 +24,7 @@ html {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -92,4 +93,17 @@ body {
 
 .icon {
   margin-right: 0.5rem;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(85, 82, 82, 0.74);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ecf0f1;
 }
