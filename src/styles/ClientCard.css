@@ -28,6 +28,6 @@
 
 @media (max-width: 768px) {
   #clientes { 
-    transform: translateX(-40px);
+    transform: translateX(-200px);
   }
 }

@@ -71,6 +71,11 @@
   color: var(--text-secondary);
 }
 
+#contato {
+  transform: translateX(500px);
+  opacity: 0;
+}
+
 /* Contact Section */
 .contact-card {
   background-color: var(--bg-white);

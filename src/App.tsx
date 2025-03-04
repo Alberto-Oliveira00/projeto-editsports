@@ -57,16 +57,62 @@ function App() {
       }
     });
   });
-  gsap.to("#clientes", {
-    x: 0,
-    opacity: 1, 
-    scrollTrigger: {
-      trigger: "#clientes",
-      markers: true,
-      start: "top 80%",
-      end: "bottom 75%",
-      scrub: true
-    }
+  // Desktop 
+  mm.add("(min-width: 769px)", () => {
+    gsap.to("#clientes", {
+      x: 0,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: "#clientes",
+        // markers: true,
+        start: "top 80%",
+        end: "bottom 60%",
+        scrub: true
+      }
+    });
+  });
+
+  // Animação para Mobile
+  mm.add("(max-width: 768px)", () => {
+    gsap.to("#clientes", {
+      x: 0,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: "#clientes",
+        // markers: true,
+        start: "top 90%", 
+        end: "bottom 110%",
+        scrub: true
+      }
+    });
+  });
+  mm.add("(min-width: 769px)", () => {
+    gsap.to("#contato", {
+      x: 0,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: "#contato",
+        markers: true,
+        start: "top 80%",
+        end: "bottom 60%",
+        scrub: true
+      }
+    });
+  });
+
+  // Animação para Mobile
+  mm.add("(max-width: 768px)", () => {
+    gsap.to("#contato", {
+      x: 0,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: "#contato",
+        markers: true,
+        start: "top 90%", 
+        end: "bottom 110%",
+        scrub: true
+      }
+    });
   });
   }, [])
 
