@@ -1,5 +1,5 @@
 import { useLayoutEffect } from 'react';
-import { Phone, Mail, MapPin, Facebook, Instagram, MessageSquare } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, Instagram } from 'lucide-react';
 import Navbar from './components/Navbar';
 import ProductCard from './components/ProductCard';
 import ClientCard from './components/ClientCard';
@@ -14,7 +14,7 @@ function App() {
 
     gsap.registerPlugin(ScrollTrigger);
 
-    let mm = gsap.matchMedia();
+    const mm = gsap.matchMedia();
 
     gsap.to(".process-item", {
       y: 0,
@@ -57,34 +57,16 @@ function App() {
       }
     });
   });
-
-  mm.add("(min-width: 769px)", () => {
-    gsap.to("#contato", {
-      y: 0,
-      opacity: 1,
-      scrollTrigger: {
-        trigger: "#contato",
-        markers: true,
-        start: "top 740px",
-        end: "bottom 1950px",
-        scrub: true
-      }
-    });
-  });
-
-  // Animação para Mobile
-  mm.add("(max-width: 768px)", () => {
-    gsap.to("#contato", {
-      y: 0,
-      opacity: 1,
-      scrollTrigger: {
-        trigger: "#contato",
-        markers: true,
-        start: "top 85%",
-        end: "bottom 550%",
-        scrub: true
-      }
-    });
+  gsap.to("#clientes", {
+    x: 0,
+    opacity: 1, 
+    scrollTrigger: {
+      trigger: "#clientes",
+      markers: true,
+      start: "top 80%",
+      end: "bottom 75%",
+      scrub: true
+    }
   });
   }, [])
 

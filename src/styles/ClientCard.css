@@ -20,3 +20,14 @@
   font-size: 1.125rem;
   font-weight: 600;
 }
+
+#clientes { 
+  transform: translateX(-500px);
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  #clientes { 
+    transform: translateX(-40px);
+  }
+}
