@@ -21,7 +21,7 @@ function App() {
       opacity: 1, 
       scrollTrigger: {
         trigger: ".container-criacao",
-        markers: true,
+        // markers: true,
         start: "top 1200px",
         end: "bottom 1000px",
         scrub: true
