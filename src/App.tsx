@@ -86,6 +86,7 @@ function App() {
       }
     });
   });
+  // Desktop
   mm.add("(min-width: 769px)", () => {
     gsap.to("#contato", {
       x: 0,
@@ -94,7 +95,7 @@ function App() {
         trigger: "#contato",
         markers: true,
         start: "top 80%",
-        end: "bottom 60%",
+        end: "bottom 70%",
         scrub: true
       }
     });

@@ -72,8 +72,15 @@
 }
 
 #contato {
-  transform: translateX(500px);
+  transform: translateX(-500px);
   opacity: 0;
+}
+
+@media (max-width: 768px) {
+  #contato {
+    transform: translateX(-10vw);
+    opacity: 0;
+  }
 }
 
 /* Contact Section */
