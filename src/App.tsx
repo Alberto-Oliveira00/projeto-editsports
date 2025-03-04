@@ -57,6 +57,35 @@ function App() {
       }
     });
   });
+
+  mm.add("(min-width: 769px)", () => {
+    gsap.to("#contato", {
+      y: 0,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: "#contato",
+        markers: true,
+        start: "top 740px",
+        end: "bottom 1950px",
+        scrub: true
+      }
+    });
+  });
+
+  // Animação para Mobile
+  mm.add("(max-width: 768px)", () => {
+    gsap.to("#contato", {
+      y: 0,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: "#contato",
+        markers: true,
+        start: "top 85%",
+        end: "bottom 550%",
+        scrub: true
+      }
+    });
+  });
   }, [])
 
   const products = [
