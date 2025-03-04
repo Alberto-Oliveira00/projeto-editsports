@@ -43,6 +43,9 @@
 /* Process Section */
 .process-item {
   text-align: center;
+}
+
+.container-criacao {
   transform: translateY(500px);
   opacity: 0;
 }
@@ -78,8 +81,11 @@
 
 @media (max-width: 768px) {
   #contato {
-    transform: translateX(-10vw);
+    transform: translateX(-150px);
     opacity: 0;
+  }
+  .container-criacao {
+  transform: translateY(190px);
   }
 }
 
@@ -174,8 +180,6 @@
 
 .process-item {
   text-align: center;
-  transform: translateY(100px);
-  opacity: 0;
 }
 }
 

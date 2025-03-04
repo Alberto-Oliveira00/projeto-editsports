@@ -16,14 +16,14 @@ function App() {
 
     const mm = gsap.matchMedia();
 
-    gsap.to(".process-item", {
+    gsap.to(".container-criacao", {
       y: 0,
       opacity: 1, 
       scrollTrigger: {
         trigger: ".container-criacao",
-        // markers: true,
-        start: "top 500px",
-        end: "bottom 640px",
+        markers: true,
+        start: "top 1200px",
+        end: "bottom 1000px",
         scrub: true
       }
     })
@@ -93,7 +93,7 @@ function App() {
       opacity: 1,
       scrollTrigger: {
         trigger: "#contato",
-        markers: true,
+        // markers: true,
         start: "top 80%",
         end: "bottom 70%",
         scrub: true
@@ -108,7 +108,7 @@ function App() {
       opacity: 1,
       scrollTrigger: {
         trigger: "#contato",
-        markers: true,
+        // markers: true,
         start: "top 90%", 
         end: "bottom 110%",
         scrub: true
