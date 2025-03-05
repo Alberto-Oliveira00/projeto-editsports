@@ -1,6 +1,8 @@
 import React from 'react';
 import { MessageSquare } from 'lucide-react';
 import '../styles/ProductCard.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 interface ProductCardProps {
   title: string;
@@ -21,7 +23,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ title, image, description }) 
           rel="noopener noreferrer"
           className="product-link"
         >
-          <MessageSquare className="icon" />
+          <FontAwesomeIcon icon= {faWhatsapp} className="icon" />
           Solicitar Orçamento
         </a>
       </div>

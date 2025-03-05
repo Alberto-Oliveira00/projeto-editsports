@@ -27,6 +27,12 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (max-width: 768px) {
+  html {
+    background-image: url('/assets/img/edit.jpg');
+  }
+}
+
 body {
   font-family: "Inter", serif;
   line-height: 1.5;
