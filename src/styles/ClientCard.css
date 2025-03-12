@@ -26,10 +26,14 @@
   opacity: 0;
 }
 
+.container-clientes {
+  text-align: center;
+}
+
 .container-clientes img {
-  
+  margin: 0 auto;
   padding: 32px;
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
 
@@ -37,4 +41,7 @@
   #clientes { 
     transform: translateX(-200px);
   }
+  .container-clientes img {
+    max-width: 100%;
+   }
 }

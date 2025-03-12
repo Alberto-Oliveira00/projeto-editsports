@@ -66,7 +66,7 @@ function App() {
         trigger: "#clientes",
         // markers: true,
         start: "top 80%",
-        end: "bottom 60%",
+        end: "bottom 90%",
         scrub: true
       }
     });
@@ -81,7 +81,7 @@ function App() {
         trigger: "#clientes",
         // markers: true,
         start: "top 90%", 
-        end: "bottom 110%",
+        end: "bottom 130%",
         scrub: true
       }
     });
@@ -255,7 +255,7 @@ function App() {
       <section id="clientes" className="section" /*style={{ backgroundColor: 'var(--bg-light)' }}*/>
         <div className="container">
           <h2 className="section-title section-title__cliente">Principais Clientes</h2>
-          <div className='container container-clientes'>
+          <div className='container-clientes'>
             <img src="../assets/img/clientes2.png" alt="Principais clientes" />
           </div>
           <div className="grid grid-3 ">
