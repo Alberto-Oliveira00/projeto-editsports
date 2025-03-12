@@ -26,6 +26,13 @@
   opacity: 0;
 }
 
+.container-clientes img {
+  
+  padding: 32px;
+  max-width: 100%;
+  height: auto;
+}
+
 @media (max-width: 768px) {
   #clientes { 
     transform: translateX(-200px);

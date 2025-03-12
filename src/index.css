@@ -58,6 +58,10 @@ body {
   margin-bottom: 3rem;
 }
 
+.section-title__cliente {
+  margin-bottom: 0;
+}
+
 .grid {
   display: grid;
   gap: 2rem;

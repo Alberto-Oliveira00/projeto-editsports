@@ -254,8 +254,11 @@ function App() {
       {/* Clients Section */}
       <section id="clientes" className="section" /*style={{ backgroundColor: 'var(--bg-light)' }}*/>
         <div className="container">
-          <h2 className="section-title">Principais Clientes</h2>
-          <div className="grid grid-3">
+          <h2 className="section-title section-title__cliente">Principais Clientes</h2>
+          <div className='container container-clientes'>
+            <img src="../assets/img/clientes2.png" alt="Principais clientes" />
+          </div>
+          <div className="grid grid-3 ">
             {clients.map((client, index) => (
               <ClientCard key={index} {...client} />
             ))}
