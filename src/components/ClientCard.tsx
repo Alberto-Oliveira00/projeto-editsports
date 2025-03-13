@@ -10,9 +10,9 @@ const ClientCard: React.FC<ClientCardProps> = ({ name, image }) => {
   return (
     <div className="client-card">
       <img src={image} alt={name} className="client-image" />
-      <div className="client-content">
+      {/* <div className="client-content">
         <h3 className="client-name">{name}</h3>
-      </div>
+      </div> */}
     </div>
   );
 };

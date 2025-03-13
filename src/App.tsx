@@ -178,6 +178,10 @@ function App() {
     {
       name: 'Escola de Futebol Craques',
       image: 'https://images.unsplash.com/photo-1518604666860-9ed391f76460?auto=format&fit=crop&q=80&w=800',
+    },
+    {
+      name: 'Escola de Futebol Craques',
+      image: 'https://images.unsplash.com/photo-1518604666860-9ed391f76460?auto=format&fit=crop&q=80&w=800',
     }
   ];
 
@@ -258,7 +262,7 @@ function App() {
           <div className='container-clientes'>
             <img src="../assets/img/clientes2.png" alt="Principais clientes" />
           </div>
-          <div className="grid grid-3 ">
+          <div className="grid grid-4 ">
             {clients.map((client, index) => (
               <ClientCard key={index} {...client} />
             ))}
