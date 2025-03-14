@@ -1,4 +1,4 @@
-import { useLayoutEffect } from 'react';
+import { useState, useEffect ,useLayoutEffect } from 'react';
 import { Phone, Mail, MapPin, Facebook, Instagram } from 'lucide-react';
 import Navbar from './components/Navbar';
 import ProductCard from './components/ProductCard';
@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 function App() {
   useLayoutEffect(() => {
@@ -185,6 +186,36 @@ function App() {
     }
   ];
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === clients.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === 0 ? clients.length - 1 : prevIndex - 1
+    );
+  };
+
+  useEffect(() => {
+    const interval = setInterval(nextSlide, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const getVisibleImages = () => {
+    const visibleImages = [];
+    for (let i = -2; i <= 2; i++) {
+      let index = currentIndex + i;
+      if (index < 0) index = clients.length + index;
+      if (index >= clients.length) index = index - clients.length;
+      visibleImages.push({ index, image: clients[index] });
+    }
+    return visibleImages;
+  };
+
   return (
     <div>
       <Navbar />
@@ -267,6 +298,41 @@ function App() {
               <ClientCard key={index} {...client} />
             ))}
           </div>
+          <div className="carousel-container">
+      <div className="carousel-wrapper">
+        <div className="carousel-content">
+          {getVisibleImages().map(({ index, image }, i) => (
+            <div
+              key={index}
+              className="slide"
+              style={{
+                transform: `translateX(${(i - 2) * 400}px) scale(${i === 2 ? 1 : 0.8})`,
+                opacity: i === 2 ? 1 : 0.5,
+                zIndex: i === 2 ? 10 : 5,
+              }}
+            >
+              <img
+                src={image.image}
+                alt={`Slide ${index}`}
+              />
+            </div>
+          ))}
+        </div>
+
+        <button
+          onClick={prevSlide}
+          className="nav-button prev-button"
+        >
+          <ChevronLeft />
+        </button>
+        <button
+          onClick={nextSlide}
+          className="nav-button next-button"
+        >
+          <ChevronRight />
+        </button>
+      </div>
+    </div>
         </div>
       </section>
 
