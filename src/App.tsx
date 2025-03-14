@@ -173,15 +173,15 @@ function App() {
     },
     {
       name: 'Academia Força Total',
-      image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=800',
+      image: '../assets/img/clientes3.jpg',
     },
     {
       name: 'Escola de Futebol Craques',
-      image: 'https://images.unsplash.com/photo-1518604666860-9ed391f76460?auto=format&fit=crop&q=80&w=800',
+      image: '../assets/img/clientes7.jpg',
     },
     {
       name: 'Escola de Futebol Craques',
-      image: 'https://images.unsplash.com/photo-1518604666860-9ed391f76460?auto=format&fit=crop&q=80&w=800',
+      image: '../assets/img/clientes1.jpg',
     }
   ];
 
