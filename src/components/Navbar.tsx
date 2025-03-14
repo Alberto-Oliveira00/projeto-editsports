@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Menu, X, MessageSquare } from 'lucide-react';
+import { useState } from 'react';
+import { Menu, X } from 'lucide-react';
 import '../styles/Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
