@@ -66,7 +66,7 @@ function App() {
         trigger: "#clientes",
         // markers: true,
         start: "top 80%",
-        end: "bottom 110%",
+        end: "bottom 140%",
         scrub: true
       }
     });
