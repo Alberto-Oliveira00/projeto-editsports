@@ -4,34 +4,34 @@ import '../styles/ClientCard.css';
 
 const clients = [
   {
-    image: '../assets/img/clientes/cliente16.jpg',
+    image: '/assets/img/clientes/cliente16.jpg',
   },
   {
-    image: '../assets/img/clientes/clientes3.jpg',
+    image: '/assets/img/clientes/clientes3.jpg',
   },
   {
-    image: '../assets/img/clientes/clientes7.jpg',
+    image: '/assets/img/clientes/clientes7.jpg',
   },
   {
-    image: '../assets/img/clientes/cliente10.jpg',
+    image: '/assets/img/clientes/cliente10.jpg',
   },
   {
-    image: '../assets/img/clientes/clientes8.jpg',
+    image: '/assets/img/clientes/clientes8.jpg',
   },
   {
-    image: '../assets/img/clientes/cliente19.jpg',
+    image: '/assets/img/clientes/cliente19.jpg',
   },
   {
-    image: '../assets/img/clientes/cliente13.jpg',
+    image: '/assets/img/clientes/cliente13.jpg',
   },
   {
-    image: '../assets/img/clientes/cliente14.jpg',
+    image: '/assets/img/clientes/cliente14.jpg',
   },
   {
-    image: '../assets/img/clientes/cliente15.jpg',
+    image: '/assets/img/clientes/cliente15.jpg',
   },
   {
-    image: '../assets/img/clientes/cliente17.jpg',
+    image: '/assets/img/clientes/cliente17.jpg',
   }
 ];
 

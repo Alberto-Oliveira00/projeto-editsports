@@ -120,48 +120,48 @@ function App() {
   const products = [
     {
       title: 'Camisetas Personalizadas',
-      image: '../assets/img/camiseta.jpg',
+      image: '/assets/img/camiseta.jpg',
       description: 'Camisetas esportivas com sua identidade visual'
     },
     {
       title: 'Fardamentos',
-      image: '../assets/img/clientes/cliente13.jpg',
+      image: '/assets/img/clientes/cliente13.jpg',
       description: 'Uniformes completos para sua equipe'
     },
     {
       title: 'Femininos ',
-      image: '../assets/img/feminina.jpg',
+      image: '/assets/img/feminina.jpg',
       description: 'Uniformes completos para sua equipe'
     },
     {
       title: 'Regatas',
-      image: '../assets/img/regata-mlk2.jpg',
+      image: '/assets/img/regata-mlk2.jpg',
       description: 'Regatas para sua equipe'
     },
     {
       title: 'Kit Atleta',
-      image: '../assets/img/clientes/clientes3.jpg',
+      image: '/assets/img/clientes/clientes3.jpg',
       description: 'Kit completo para atletas profissionais'
     },
     {
       title: 'Bolsas Esportivas',
-      image: '../assets/img/bolsas.jpg',
+      image: '/assets/img/bolsas.jpg',
       description: 'Bolsas personalizadas para atletas'
     },
     {
       title: 'Bonés Personalizados',
-      image: '../assets/img/bones.jpg',
+      image: '/assets/img/bones.jpg',
       description: 'Bonés com design exclusivo'
     },
     
     {
       title: 'Kit Inverno',
-      image: '../assets/img/kit-inverno.jpg',
+      image: '/assets/img/kit-inverno.jpg',
       description: 'Roupas de inverno para sua equipe'
     },
     {
       title: 'Bandeiras',
-      image: '../assets/img/bandeira.jpg',
+      image: '/assets/img/bandeira.jpg',
       description: 'Bandeiras para sua equipe'
     }
   ];
