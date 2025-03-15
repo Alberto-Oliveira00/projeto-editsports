@@ -51,8 +51,8 @@ function App() {
       scrollTrigger: {
         trigger: "#produtos",
         // markers: true,
-        start: "top 85%",
-        end: "bottom 550%",
+        start: "top 90%",
+        end: "bottom 580%",
         scrub: true
       }
     });
@@ -173,7 +173,7 @@ function App() {
       {/* Hero Section */}
       <section className="hero">
         <img
-          src="../assets/img/aleatorio.jpg"
+          src="/assets/img/hero-novo.jpg"
           alt="Hero"
           className="hero-image"
         />
