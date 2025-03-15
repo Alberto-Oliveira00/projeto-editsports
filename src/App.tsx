@@ -1,4 +1,4 @@
-import { useState, useEffect ,useLayoutEffect } from 'react';
+import { useLayoutEffect } from 'react';
 import { Phone, Mail, MapPin, Facebook, Instagram } from 'lucide-react';
 import Navbar from './components/Navbar';
 import ProductCard from './components/ProductCard';
@@ -8,7 +8,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 function App() {
   useLayoutEffect(() => {
@@ -67,7 +66,7 @@ function App() {
         trigger: "#clientes",
         // markers: true,
         start: "top 80%",
-        end: "bottom 90%",
+        end: "bottom 110%",
         scrub: true
       }
     });
@@ -82,7 +81,7 @@ function App() {
         trigger: "#clientes",
         // markers: true,
         start: "top 90%", 
-        end: "bottom 130%",
+        end: "bottom 120%",
         scrub: true
       }
     });
@@ -96,7 +95,7 @@ function App() {
         trigger: "#contato",
         // markers: true,
         start: "top 80%",
-        end: "bottom 70%",
+        end: "bottom 90%",
         scrub: true
       }
     });
@@ -111,7 +110,7 @@ function App() {
         trigger: "#contato",
         // markers: true,
         start: "top 90%", 
-        end: "bottom 110%",
+        end: "bottom 100%",
         scrub: true
       }
     });
@@ -126,7 +125,7 @@ function App() {
     },
     {
       title: 'Fardamentos',
-      image: '../assets/img/fardamento.jpg',
+      image: '../assets/img/clientes/cliente13.jpg',
       description: 'Uniformes completos para sua equipe'
     },
     {
@@ -136,12 +135,12 @@ function App() {
     },
     {
       title: 'Regatas',
-      image: '../assets/img/regata.jpg',
+      image: '../assets/img/regata-mlk2.jpg',
       description: 'Regatas para sua equipe'
     },
     {
       title: 'Kit Atleta',
-      image: '../assets/img/aleatorio.jpg',
+      image: '../assets/img/clientes/clientes3.jpg',
       description: 'Kit completo para atletas profissionais'
     },
     {
@@ -166,55 +165,6 @@ function App() {
       description: 'Bandeiras para sua equipe'
     }
   ];
-
-  const clients = [
-    {
-      name: 'Clube Atlético Local',
-      image: 'https://images.unsplash.com/photo-1577471488278-16eec37ffcc2?auto=format&fit=crop&q=80&w=800',
-    },
-    {
-      name: 'Academia Força Total',
-      image: '../assets/img/clientes3.jpg',
-    },
-    {
-      name: 'Escola de Futebol Craques',
-      image: '../assets/img/clientes7.jpg',
-    },
-    {
-      name: 'Escola de Futebol Craques',
-      image: '../assets/img/clientes1.jpg',
-    }
-  ];
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === clients.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === 0 ? clients.length - 1 : prevIndex - 1
-    );
-  };
-
-  useEffect(() => {
-    const interval = setInterval(nextSlide, 5000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const getVisibleImages = () => {
-    const visibleImages = [];
-    for (let i = -2; i <= 2; i++) {
-      let index = currentIndex + i;
-      if (index < 0) index = clients.length + index;
-      if (index >= clients.length) index = index - clients.length;
-      visibleImages.push({ index, image: clients[index] });
-    }
-    return visibleImages;
-  };
 
   return (
     <div>
@@ -287,54 +237,7 @@ function App() {
       </section>
 
       {/* Clients Section */}
-      <section id="clientes" className="section" /*style={{ backgroundColor: 'var(--bg-light)' }}*/>
-        <div className="container">
-          <h2 className="section-title section-title__cliente">Principais Clientes</h2>
-          <div className='container-clientes'>
-            <img src="../assets/img/clientes2.png" alt="Principais clientes" />
-          </div>
-          <div className="grid grid-4 ">
-            {clients.map((client, index) => (
-              <ClientCard key={index} {...client} />
-            ))}
-          </div>
-          <div className="carousel-container">
-      <div className="carousel-wrapper">
-        <div className="carousel-content">
-          {getVisibleImages().map(({ index, image }, i) => (
-            <div
-              key={index}
-              className="slide"
-              style={{
-                transform: `translateX(${(i - 2) * 400}px) scale(${i === 2 ? 1 : 0.8})`,
-                opacity: i === 2 ? 1 : 0.5,
-                zIndex: i === 2 ? 10 : 5,
-              }}
-            >
-              <img
-                src={image.image}
-                alt={`Slide ${index}`}
-              />
-            </div>
-          ))}
-        </div>
-
-        <button
-          onClick={prevSlide}
-          className="nav-button prev-button"
-        >
-          <ChevronLeft />
-        </button>
-        <button
-          onClick={nextSlide}
-          className="nav-button next-button"
-        >
-          <ChevronRight />
-        </button>
-      </div>
-    </div>
-        </div>
-      </section>
+      <ClientCard />
 
       {/* Contact Section */}
       <section id="contato" className="section" /*style={{ backgroundColor: 'var(--bg-light)' }}*/ >
