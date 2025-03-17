@@ -140,7 +140,7 @@ function App() {
     },
     {
       title: 'Kit Atleta',
-      image: '/assets/img/clientes/clientes3.jpg',
+      image: '/assets/img/clientes/kitatleta.jpg',
       description: 'Kit completo para atletas profissionais'
     },
     {
