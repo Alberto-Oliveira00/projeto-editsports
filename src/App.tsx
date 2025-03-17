@@ -52,7 +52,7 @@ function App() {
         trigger: "#produtos",
         // markers: true,
         start: "top 90%",
-        end: "bottom 580%",
+        end: "bottom 595%",
         scrub: true
       }
     });

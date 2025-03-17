@@ -7,10 +7,7 @@ const clients = [
     image: '/assets/img/clientes/cliente16.jpg',
   },
   {
-    image: '/assets/img/clientes/clientes3.jpg',
-  },
-  {
-    image: '/assets/img/clientes/clientes7.jpg',
+    image: '/assets/img/clientes/cliente5.jpg',
   },
   {
     image: '/assets/img/clientes/cliente10.jpg',
@@ -32,6 +29,15 @@ const clients = [
   },
   {
     image: '/assets/img/clientes/cliente17.jpg',
+  },
+  {
+    image: '/assets/img/clientes/clientes7.jpg',
+  },
+  {
+    image: '/assets/img/fardamento.jpg',
+  },
+  {
+    image: '/assets/img/clientes/clientes3.jpg',
   }
 ];
 
