@@ -173,25 +173,17 @@ function App() {
       {/* Hero Section */}
       <section className="hero">
         <img
-          src="/assets/img/hero-novo.jpg"
+          src="/assets/img/edit-banner2.png"
           alt="Hero"
           className="hero-image"
         />
+        <img
+          src="/assets/img/edit_banner-mobile.png"
+          alt="Hero Mobile"
+          className="hero-image-mobile"
+        />
         <div className="hero-overlay"></div>
         <div className="container hero-content">
-          <div className="hero-text">
-            <h1 className="hero-title">Edit Sports</h1>
-            <p className="hero-description">Transformamos suas ideias em produtos esportivos de alta qualidade. Design personalizado para sua equipe brilhar dentro e fora de campo.</p>
-            <a
-              href="https://wa.me/5511947814551"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-primary"
-            >
-              <FontAwesomeIcon icon= {faWhatsapp} className="icon"/>
-              Fale com um Vendedor
-            </a>
-          </div>
         </div>
       </section>
 

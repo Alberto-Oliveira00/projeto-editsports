@@ -1,9 +1,9 @@
 .hero {
   position: relative;
-  height: 90vh;
+  height: 98vh;
 }
 
-.hero-image {
+.hero-image { 
   position: absolute;
   inset: 0;
   width: 100%;
@@ -14,7 +14,22 @@
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.144);
+}
+
+.hero-image-mobile {
+  display: none;
+}
+
+@media (max-width: 555px) {
+  .hero-image {
+    display: none;
+  }
+  .hero-image-mobile {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .hero-content {
@@ -22,22 +37,6 @@
   height: 100%;
   display: flex;
   align-items: center;
-}
-
-.hero-text {
-  color: white;
-  max-width: 32rem;
-}
-
-.hero-title {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.hero-description {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
 }
 
 /* Process Section */

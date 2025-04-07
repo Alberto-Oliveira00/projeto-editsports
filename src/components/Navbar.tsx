@@ -26,7 +26,7 @@ const Navbar = () => {
             className="btn btn-primary"
           >
           <FontAwesomeIcon icon= {faWhatsapp} className="icon"/>
-            Fale com um Vendedor
+            Fale Conosco
           </a>
         </div>
 
