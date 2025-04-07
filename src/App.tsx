@@ -260,10 +260,14 @@ function App() {
                 <a href="#" className="social-link" style={{ color: '#1d4ed8' }}>
                   <Facebook />
                 </a>
-                <a href="https://www.instagram.com/editsportsoficial/" className="social-link" style={{ color: '#db2777' }}>
+                <a href="https://www.instagram.com/editsportsoficial/" target='blank' className="social-link" style={{ color: '#db2777' }}>
                   <Instagram />
                 </a>
-                <a href="#" className="social-link" style={{ color: 'var(--success-color)' }}>
+                <a 
+                  href="https://wa.me/5511947814551" 
+                  target="_blank" 
+                  className="social-link" 
+                  style={{ color: 'var(--success-color)' }}>
                   <FontAwesomeIcon icon= {faWhatsapp} className='wpp-abaixo'/>
                 </a>
               </div>
