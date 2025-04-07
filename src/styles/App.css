@@ -21,7 +21,7 @@
   display: none;
 }
 
-@media (max-width: 555px) {
+@media (max-width: 768px) {
   .hero-image {
     display: none;
   }
