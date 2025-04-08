@@ -36,7 +36,7 @@ function App() {
       scrollTrigger: {
         trigger: "#produtos",
         // markers: true,
-        start: "top 740px",
+        start: "top 800px",
         end: "bottom 1950px",
         scrub: true
       }
