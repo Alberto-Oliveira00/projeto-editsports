@@ -50,7 +50,7 @@ function App() {
       opacity: 1,
       scrollTrigger: {
         trigger: "#produtos",
-        markers: true,
+        //markers: true,
         start: "top 180%",
         end: "bottom 680%",
         scrub: true
