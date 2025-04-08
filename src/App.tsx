@@ -50,9 +50,9 @@ function App() {
       opacity: 1,
       scrollTrigger: {
         trigger: "#produtos",
-        // markers: true,
-        start: "top 90%",
-        end: "bottom 595%",
+        markers: true,
+        start: "top 180%",
+        end: "bottom 680%",
         scrub: true
       }
     });
@@ -145,7 +145,7 @@ function App() {
     },
     {
       title: 'Bolsas Esportivas',
-      image: '/assets/img/bolsas.jpg',
+      image: '/assets/img/bolsas2.jpg',
       description: 'Bolsas personalizadas para atletas'
     },
     {
