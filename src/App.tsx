@@ -173,12 +173,12 @@ function App() {
       {/* Hero Section */}
       <section className="hero">
         <img
-          src="/assets/img/edit-banner2.png"
+          src="/assets/img/EDIT-BANNER.png"
           alt="Hero"
           className="hero-image"
         />
         <img
-          src="/assets/img/edit_banner-mobile.png"
+          src="/assets/img/EDIT-MOBILE2.png"
           alt="Hero Mobile"
           className="hero-image-mobile"
         />

@@ -69,7 +69,7 @@ const Navbar = () => {
             onClick={() => setIsOpen(false)}
           >
             <FontAwesomeIcon icon= {faWhatsapp} className="icon" />
-            Fale com um Vendedor
+            Fale Conosco
           </a>
         </div>
       </div>
